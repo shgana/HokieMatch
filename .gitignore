@@ -1,0 +1,12 @@
+# Ignore all PDF files
+*.pdf
+
+# Ignore all JSON files
+*.json
+
+# Optional: If you want to ignore these files in any subdirectory
+**/*.pdf
+**/*.json
+
+# Optional: If you want to keep specific JSON files (like package.json), you can negate the ignore
+!package.json 
