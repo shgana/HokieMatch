@@ -10,3 +10,10 @@
 
 # Optional: If you want to keep specific JSON files (like package.json), you can negate the ignore
 !package.json 
+
+.venv/
+venv/
+.env
+__pycache__/
+*.py[cod]
+.DS_Store
