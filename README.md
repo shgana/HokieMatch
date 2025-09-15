@@ -36,10 +36,10 @@
 ---
 
 ## ⚡ TL;DR (30 seconds)
-- **Upload DARS ➜ get an interactive plan** that shows what’s done, what’s left, and the fastest paths to finish.
-- **Pick Pathways strategically** with a live catalog of courses that satisfy each requirement.
-- **Choose easier profs/courses** using **33k+ rows** of GPA history and ranking logic.
-- **Modern stack**: Next.js + Tailwind + shadcn UI + Supabase + Python parser. Optional AI assist.
+- **Upload DARS ➜ get an interactive plan** that shows what’s done, what’s left, and the fastest paths to finish.  
+- **Pick Pathways strategically** with a live catalog of courses that satisfy each requirement.  
+- **Choose easier profs/courses** using **33k+ rows** of GPA history and ranking logic.  
+- **Modern stack**: Next.js + Tailwind + shadcn UI + Supabase + Python parser. Optional AI assist.  
 
 ---
 
@@ -57,12 +57,12 @@
 ---
 
 ## ✨ Features
-- **📄 DARS Parser** – Converts your DARS into a structured JSON of **completed / in-progress / remaining** requirements.
-- **🧭 Pathways Navigator** – Explore **Pathways** with filters, see exactly which courses satisfy each area.
-- **📊 Smart Recommendations** – Combines **historical GPA** by section/instructor to surface lighter-load options.
-- **🧠 AI Assist (opt-in)** – Natural language “what should I take next?” planning (LLM key optional).
-- **⚡ Beautiful, Fast UI** – Next.js 14 App Router, TailwindCSS, shadcn UI, Lucide icons, Drag & Drop where it counts.
-- **🔌 Supabase** – Postgres + Auth + RLS (ready for production if you lock it down).
+- **📄 DARS Parser** – Converts your DARS into a structured JSON of **completed / in-progress / remaining** requirements.  
+- **🧭 Pathways Navigator** – Explore **Pathways** with filters, see exactly which courses satisfy each area.  
+- **📊 Smart Recommendations** – Combines **historical GPA** by section/instructor to surface lighter-load options.  
+- **🧠 AI Assist (opt-in)** – Natural language “what should I take next?” planning (LLM key optional).  
+- **⚡ Beautiful, Fast UI** – Next.js 14 App Router, TailwindCSS, shadcn UI, Lucide icons, Drag & Drop where it counts.  
+- **🔌 Supabase** – Postgres + Auth + RLS (ready for production if you lock it down).  
 
 ---
 
@@ -70,7 +70,7 @@
 
 ```mermaid
 graph TD
-  A[User Browser] -->|Next.js App| B(Next.js / App Router)
+  A[User Browser] -->|Next.js App| B[Next.js / App Router]
   B -->|API Routes / Edge| C[Supabase (Postgres + Auth)]
   B --> D[Pathways Catalog JSON]
   B --> E[GPA Dataset (CSV → Tables)]
@@ -78,6 +78,6 @@ graph TD
   F -->|emit JSON| B
   C -->|SQL & RPC| B
   B -->|Optional LLM| G[(AI Provider)]
-  subgraph Data Ingest
+  subgraph DataIngest
     E -->|ETL| C
   end
